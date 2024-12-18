@@ -316,7 +316,7 @@ rf.modelSel <- function(xdata, ydata, imp.scale = c("mir", "se"), r = c(0.25, 0.
     errors <- rbind(errors[sel.post,],errors[-sel.post,])
 
   ## regression ##	
-  } else if(RFtype == "FALSE") {
+if(RFtype == "FALSE") {
     model.vars <- list()
     ln <- 0
     if(method[1] == "Breiman") {
